@@ -1,0 +1,11 @@
+{
+  "sublimelinter_popup_errors_on_save": true,
+  "sublimelinter_notes": true,
+  "annotations": ["TODO", "README", "FIXME"],
+  // TODO: change SublimeLinter colors to Solarized
+
+  "sublimelinter_executable_map":
+  {
+      "ruby": "/Users/Jon/.rvm/bin/sublime_ruby"
+  }
+}
