@@ -34,7 +34,7 @@
   ui = true
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
-  editor = vim
+  editor = subl
   quotepath = false
 [apply]
   whitespace = nowarn
