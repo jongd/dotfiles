@@ -40,3 +40,5 @@ done
 unset config_files
 
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+. `brew --prefix`/Cellar/z/1.5/etc/profile.d/z.sh
