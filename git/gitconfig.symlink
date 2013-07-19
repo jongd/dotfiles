@@ -1,8 +1,8 @@
 [hub]
   protocol = https
 [user]
-  name = Jon Gold
-  email = hello@designedbygold.com
+	name = Jon Gold
+	email = hello@designedbygold.com
   helper = osxkeychain
 [alias]
   co = checkout
@@ -31,7 +31,7 @@
   ui = true
 [core]
   excludesfile = /opt/boxen/config/git/gitignore
-  editor = subl
+  editor = subl -w
   quotepath = false
 [apply]
   whitespace = nowarn
@@ -57,7 +57,7 @@
 [mergetool "splice"]
   cmd = "mvim -f $BASE $LOCAL $REMOTE $MERGED -c 'SpliceInit'"
 [mergetool]
-  keepBackup = false
+	keepBackup = false
 [help]
   autocorrect = 1
 [push]
@@ -73,4 +73,5 @@
 [credential]
   helper = /opt/boxen/bin/boxen-git-credential
 [heroku]
-  account = makeshift
+[heroku]
+	account = makeshift
