@@ -1,4 +1,4 @@
-alias r='rbenv local 1.8.7-p358'
+alias r='rbenv local 2.0.0-p195'
 
 alias sc='script/console'
 alias sg='script/generate'
@@ -43,10 +43,11 @@ alias production-tail='heroku logs --tail --remote production'
 alias db-pull-staging='heroku db:pull --remote staging --confirm `staging-name`'
 alias db-pull-production='heroku db:pull --remote production --confirm `production-name`'
 alias db-copy-production-to-staging='heroku pgbackups:restore DATABASE `heroku pgbackups:url --app production-name` --app `staging-name` --confirm `staging-name`'
-alias db-backup-production='heroku pgbackups:capture --remote production'
+alias db-backup-production='heroku pgbackups:capture --remote production --expire'
 
 # Forman
 alias fd='foreman start -f Procfile.dev'
 alias f='foreman start Procfile'
-alias fs='foreman run bundle exec padrino rake spec'
-alias fc='foreman run bundle exec padrino console'
+alias fs='foreman run bundle exec rake spec'
+alias fc='foreman run bundle exec rails console'
+
