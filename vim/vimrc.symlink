@@ -143,3 +143,5 @@ endif
 
 set mouse=a
 
+let g:snippets_dir="~/.vim/bundle/vim-snippets/snippets"
+
