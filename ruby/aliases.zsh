@@ -47,7 +47,7 @@ alias db-backup-production='heroku pgbackups:capture --remote production --expir
 
 # Forman
 alias fd='foreman start -f Procfile.dev'
+alias fz='foreman start -f Procfile.zeus'
 alias f='foreman start Procfile'
 alias fs='foreman run bundle exec rake spec'
 alias fc='foreman run bundle exec rails console'
-

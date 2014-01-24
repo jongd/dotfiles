@@ -44,3 +44,5 @@ unset config_files
 . `brew --prefix`/Cellar/z/1.5/etc/profile.d/z.sh
 
 export PGHOST=/var/pgsql_socket
+
+doge
