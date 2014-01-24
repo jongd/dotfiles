@@ -1,3 +1,3 @@
 {
-  "git_command": "/usr/bin/git"
+  "git_command": "/opt/boxen/homebrew/bin/hub"
 }

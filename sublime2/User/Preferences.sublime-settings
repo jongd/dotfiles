@@ -1,9 +1,9 @@
 {
 	"auto_indent": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Soda Color/Espresso Soda.tmTheme",
+	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 	"detect_indentation": true,
-	"draw_white_space": "all",
+	"draw_indent_guides": true,
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -14,33 +14,49 @@
 		"_site",
 		"node_modules",
 		"tmp",
-		".bundle"
+		".bundle",
+		".meteor",
+		"build-tmp",
+		"public/uploads"
 	],
+	"font_face": "Akkurat Mono",
 	"font_options":
 	[
 		"no_bold",
 		"subpixel_antialias"
 	],
-	"font_size": 11.0,
+	"font_size": 13.0,
 	"highlight_line": true,
 	"ignored_packages":
 	[
+		"Backbone.js",
 		"Console API Snippets (JavaScript)",
+		"LESS",
+		"Backbone.Marionette",
+		"RuboCop",
+		"GitGutter",
+		"CoffeeCompile",
 		"Live CSS",
 		"SublimeBlockCursor",
+		"eco",
+		"AngularJS (CoffeeScript)",
+		"Nodejs",
 		"VintageLines",
+		"Erlang",
 		"Autocomplete Javascript with Method Signature",
 		"Emmet"
 	],
-	"line_padding_bottom": 1,
+	"line_padding_bottom": 2,
 	"line_padding_top": 0,
 	"rulers":
 	[
 		80
 	],
+	"scroll_past_end": true,
+	"show_panel_on_build": true,
 	"smart_indent": true,
 	"tab_size": 2,
-	"theme": "Soda Light.sublime-theme",
+	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stops": true,
