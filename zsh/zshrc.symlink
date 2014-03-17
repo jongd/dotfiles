@@ -46,3 +46,5 @@ unset config_files
 export PGHOST=/var/pgsql_socket
 
 doge
+
+. $ZSH/zsh/h.sh
