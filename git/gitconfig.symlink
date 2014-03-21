@@ -37,6 +37,7 @@
   whitespace = nowarn
 [github]
   cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	user = jongd
 [difftool]
   prompt = false
 [diff]

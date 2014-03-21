@@ -83,6 +83,9 @@ colorscheme base16-ocean
 set number
 set numberwidth=5
 
+let g:gist_clip_command = 'pbcopy'
+let g:gist_detect_filetype = 1
+
 " Snippets are activated by Shift+Tab
 let g:snippetsEmu_key = "<S-Tab>"
 
