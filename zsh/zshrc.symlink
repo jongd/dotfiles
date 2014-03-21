@@ -47,6 +47,8 @@ export PGHOST=/var/pgsql_socket
 
 doge
 
+export ACKRC=".ackrc"
+
 . $ZSH/zsh/h.sh
 
 BASE16_SHELL="$ZSH/zsh/base16-ocean-dark.sh"

@@ -1,0 +1,17 @@
+--smart-case
+--sort-files
+--color
+--group
+--pager=less -iqRS
+
+
+--type-add=ruby=.haml,.sass,.scss
+--type-add=html=.haml
+--type-add=css=.sass,.scss
+
+--type-set=coffee=.coffee
+--type-set=json=.json
+--type-set=markdown=.markdown,.md,.mdown,.mkd,.mkdn
+
+--ignore-dir=is:node_modules
+--ignore-dir=is:tmp
