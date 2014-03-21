@@ -48,3 +48,7 @@ export PGHOST=/var/pgsql_socket
 doge
 
 . $ZSH/zsh/h.sh
+
+BASE16_SHELL="$ZSH/zsh/base16-ocean-dark.sh"
+
+[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
