@@ -79,6 +79,15 @@ colorscheme base16-ocean
 "highlight NonText guibg=#060606
 "highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
+" let g:startify_custom_header=$doge
+
+let g:tmuxline_separators = {
+    \ 'left' : '',
+    \ 'left_alt': '>',
+    \ 'right' : '',
+    \ 'right_alt' : '<',
+    \ 'space' : ' '}
+
 " Numbers
 set number
 set numberwidth=5
