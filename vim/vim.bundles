@@ -24,7 +24,6 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-surround'
-" Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'vim-scripts/greplace.vim'
 Bundle 'vim-scripts/tComment'
@@ -32,15 +31,20 @@ Bundle 'xenoterracide/html.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'myusuf3/numbers.vim'
-" Bundle 'Shougo/neocomplete'
-" Bundle 'Shougo/neosnippet'
 Bundle 'editorconfig/editorconfig-vim'
-" Bundle 'tpope/vim-fireplace§'
-" Bundle 'tpope/vim-classpath'
-" Bundle 'guns/vim-clojure-static'
 Bundle 'nono/vim-handlebars'
 Bundle 'ngmy/vim-rubocop'
-" Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-dispatch'
+" Disabled plugins
+" Bundle 'airblade/vim-gitgutter' " This was being glitchy
+" Bundle 'Shougo/neocomplete'
+" Bundle 'Shougo/neosnippet'
+" Bundle 'tsaleh/vim-matchit'
+
+"" Clojure
+" Bundle 'tpope/vim-fireplace'
+" Bundle 'tpope/vim-classpath'
+" Bundle 'guns/vim-clojure-static'
+
 
 filetype on
