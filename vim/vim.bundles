@@ -35,6 +35,7 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'nono/vim-handlebars'
 Bundle 'ngmy/vim-rubocop'
 Bundle 'tpope/vim-dispatch'
+Bundle 'mhinz/vim-startify'
 Bundle 'chriskempson/base16-vim'
 " Disabled plugins
 " Bundle 'airblade/vim-gitgutter' " This was being glitchy
