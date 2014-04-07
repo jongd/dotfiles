@@ -39,13 +39,17 @@ done
 
 unset config_files
 
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+if ["$(uname)" == "Darwin"]; then
+  [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
-. `brew --prefix`/Cellar/z/1.5/etc/profile.d/z.sh
+  . `brew --prefix`/Cellar/z/1.5/etc/profile.d/z.sh
+fi
 
 export PGHOST=/var/pgsql_socket
 
-doge
+# doge
+# cowsay -f ntlk cooking with gas!
+# cowsay -f markconnor "sup bb"
 
 export ACKRC=".ackrc"
 
