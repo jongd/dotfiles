@@ -14,6 +14,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'nanki/treetop.vim'
 Bundle 'scrooloose/syntastic'
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'thoughtbot/vim-rspec'
 Bundle 'timcharper/textile.vim'
 Bundle 'tpope/vim-bundler'
@@ -41,6 +42,8 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 Bundle 'bling/vim-airline'
 Bundle 'edkolev/tmuxline.vim'
+Bundle 'vim-scripts/AutoTag'
+Bundle 'majutsushi/tagbar'
 
 " Disabled plugins
 " Bundle 'airblade/vim-gitgutter' " This was being glitchy
@@ -49,9 +52,9 @@ Bundle 'edkolev/tmuxline.vim'
 " Bundle 'tsaleh/vim-matchit'
 
 "" Clojure
-" Bundle 'tpope/vim-fireplace'
-" Bundle 'tpope/vim-classpath'
-" Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
+Bundle 'tpope/vim-classpath'
+Bundle 'guns/vim-clojure-static'
 
 
 filetype on
