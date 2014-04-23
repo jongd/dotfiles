@@ -1,6 +1,4 @@
-if ["$(uname)" == "Darwin"]; then
-  autoload colors && colors
-fi
+autoload colors && colors
 # cheers, @ehrenmurdick
 # http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
