@@ -45,6 +45,10 @@ unset config_files
 
 export PGHOST=/var/pgsql_socket
 
+if hash archey 2>/dev/null;
+then
+  archey -c
+fi
 # doge
 # cowsay -f ntlk cooking with gas!
 # cowsay -f markconnor "sup bb"

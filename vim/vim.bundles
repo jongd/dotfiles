@@ -44,6 +44,8 @@ Bundle 'bling/vim-airline'
 Bundle 'edkolev/tmuxline.vim'
 Bundle 'vim-scripts/AutoTag'
 Bundle 'majutsushi/tagbar'
+Bundle 'pangloss/vim-javascript'
+Bundle 'mxw/vim-jsx'
 
 " Disabled plugins
 " Bundle 'airblade/vim-gitgutter' " This was being glitchy
