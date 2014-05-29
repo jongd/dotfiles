@@ -51,10 +51,28 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile *.md setlocal textwidth=80
 augroup END
 
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+au BufEnter *.org    call org#SetOrgFileType()
+
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
 set expandtab
+
+" Code folding
+set foldlevelstart=0
+
+" Space to toggle folds
+nnoremap <Space> za
+vnoremap <Space> za
+
+" Refocus folds
+nnoremap ,z zMzvzz
+
+" Make zO recursively open whatever top level fold we're in, no matter where
+" the
+" cursor happens to be.
+nnoremap zO zCzO
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
@@ -68,7 +86,7 @@ set list listchars=tab:»·,trail:·
 "   let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden --ignore-dir=.git -g ""'
 " endif
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*     " MacOSX/Linux
 
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
@@ -153,6 +171,14 @@ nnoremap <C-l> <C-w>l
 " Remap semicolon to colon
 map ; :
 
+" JSHint
+" let jshint2_read = 1
+let jshint2_save = 1
+" let jshint2_close = 0
+" let jshint2_confirm = 0
+" let jshint2_color = 0
+" let jshint2_error = 0
+" let jshint2_height = 20
 
 " configure syntastic syntax checking to check on open as well as save
 let g:syntastic_check_on_open=1
