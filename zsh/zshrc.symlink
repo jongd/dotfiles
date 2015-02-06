@@ -62,6 +62,6 @@ export ACKRC=".ackrc"
 
 BASE16_SHELL="$ZSH/zsh/base16-ocean-dark.sh"
 
-[[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 [ -s "/Users/jon/.nvm/nvm.sh" ] && . "/Users/jon/.nvm/nvm.sh" # This loads nvm
