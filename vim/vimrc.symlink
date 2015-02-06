@@ -1,3 +1,5 @@
+set shell=/bin/sh
+
 " Leader
 let mapleader = " "
 
@@ -54,6 +56,8 @@ augroup END
 au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
 au BufEnter *.org    call org#SetOrgFileType()
 
+au BufNewFile,BufRead vim.bundles set filetype=vim
+
 " Softtabs, 2 spaces
 set tabstop=2
 set shiftwidth=2
@@ -94,8 +98,8 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 set background=dark
 let base16colorspace=256
 colorscheme base16-ocean
-"highlight NonText guibg=#060606
-"highlight Folded  guibg=#0A0A0A guifg=#9090D0
+highlight NonText guibg=#060606
+highlight Folded  guibg=#0A0A0A guifg=#9090D0
 
 " let g:startify_custom_header=$doge
 
@@ -194,4 +198,16 @@ set mouse=a
 " Enable ruler
 set colorcolumn=80
 
+set viminfo='100,n$HOME/.vim/files/info/viminfo
 
+
+" NeoComplete
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#min_keyword_length = 3
