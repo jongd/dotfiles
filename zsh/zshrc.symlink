@@ -46,7 +46,7 @@ unset config_files
 
 . `brew --prefix`/Cellar/z/1.8/etc/profile.d/z.sh
 
-export PGHOST=/var/pgsql_socket
+# export PGHOST=/var/pgsql_socket
 
 if hash archey 2>/dev/null;
 then
