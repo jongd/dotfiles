@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 alias r='rbenv local 2.0.0-p195'
 
 alias sc='script/console'
