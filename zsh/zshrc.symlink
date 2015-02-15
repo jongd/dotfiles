@@ -65,4 +65,7 @@ BASE16_SHELL="$ZSH/zsh/base16-ocean-dark.sh"
 
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
-[ -s "/Users/jon/.nvm/nvm.sh" ] && . "/Users/jon/.nvm/nvm.sh" # This loads nvm
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# $(boot2docker shellinit)
