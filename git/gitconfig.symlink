@@ -30,8 +30,7 @@
   branch = auto
   ui = true
 [core]
-  excludesfile = /opt/boxen/config/git/gitignore
-  editor = subl -w
+  editor = nvim
   quotepath = false
 [apply]
   whitespace = nowarn
@@ -71,8 +70,4 @@
   protocol = https
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
-[credential]
-  helper = /opt/boxen/bin/boxen-git-credential
 [heroku]
-[heroku]
-	account = makeshift
