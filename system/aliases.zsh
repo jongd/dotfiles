@@ -24,3 +24,6 @@ alias lf='ls -Gl | grep ^d' #Only list directories
 alias lsd='ls -Gal | grep ^d' #Only list directories, including hidden ones
 
 alias pcat="pygmentize -f terminal256 -O style=native -g"
+
+# Focus
+alias focus='open focus://toggle'
