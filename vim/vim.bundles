@@ -21,6 +21,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-haml'
 Plug 'tpope/vim-markdown'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/ctags.vim'
 Plug 'vim-scripts/greplace.vim'
@@ -67,6 +68,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'gkz/vim-ls'
 Plug 'unblevable/quick-scope'
+Plug 'kshenoy/vim-signature'
 
 " Disabled plugins
 " Plug 'airblade/vim-gitgutter' " This was being glitchy
@@ -75,6 +77,8 @@ Plug 'unblevable/quick-scope'
 "" Clojure
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-classpath'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'guns/vim-sexp'
 Plug 'guns/vim-clojure-static'
 
 
