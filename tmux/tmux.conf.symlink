@@ -28,7 +28,7 @@ setw -g window-status-current-attr bright
 set -g status-utf8 on
 set -g status-left "[#h]:#S"
 set -g status-left-length 45
-set -g status-right "%Y-%m-%d #[fg=white]%R "
+set -g status-right "%Y-%m-%d #[fg=white]%R #{battery_icon}"
 set -g status-justify centre
 setw -g monitor-activity on
 set -g visual-activity on
@@ -53,4 +53,11 @@ bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Fix delay when sending escape key
 set -sg escape-time 0
+
+# Plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @plugin 'tmux-plugins/tmux-battery'
 
