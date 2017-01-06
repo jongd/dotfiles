@@ -31,9 +31,12 @@ cmd + ctrl - d           :    kwmc space -t float
 # Rotate Window-Tree By 90degrees (Clockwise)
 cmd + ctrl - r           :    kwmc tree rotate 90
 
+# Toggle focus-follows-mouse
+cmd + ctrl - m           :    kwmc config focus-follows-mouse toggle
+
 # Modify Container
 prefix - s               :    kwmc window -c split-mode toggle
-prefix - 0x32            :    kwmc window -c type toggle
+prefix - t               :    kwmc window -c type toggle
 
 prefix - up              :    kwmc window -c expand 0.05 north
 prefix - right           :    kwmc window -c expand 0.05 east
@@ -69,6 +72,10 @@ cmd + alt - m            :    kwmc window -fm next
 cmd + alt - 1            :    kwmc display -f 0
 cmd + alt - 2            :    kwmc display -f 1
 cmd + alt - 3            :    kwmc display -f 2
+
+# Switch Spaces
+ctrl - right             :    kwmc space -fExperimental right
+ctrl - left              :    kwmc space -fExperimental left
 
 # Swap Focused Window
 ctrl + alt - up          :    kwmc window -s north
