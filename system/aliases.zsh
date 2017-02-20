@@ -27,3 +27,6 @@ alias pcat="pygmentize -f terminal256 -O style=native -g"
 
 # Focus
 alias focus='open focus://toggle'
+
+# NPM
+alias npmlinks='ls -l node_modules | grep ^l'
