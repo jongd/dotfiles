@@ -1,3 +1,2 @@
-alias vim='mvim -v'
-alias mvim='vim'
+alias vim='nvim'
 alias vimconfig='vim ~/.dotfiles/vim'

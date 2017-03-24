@@ -184,6 +184,8 @@ let b:syntastic_mode='passive'
 let g:syntastic_check_on_open=0
 let g:syntastic_javascript_checkers = ['eslint']
 
+map <Leader>s :SyntasticToggleMode<CR>
+
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -192,10 +194,29 @@ let g:syntastic_coffee_checkers = []
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "⚠"
+
+" Haskell
+map <silent> tw :GhcModTypeInsert<CR>
+map <silent> ts :GhcModSplitFunCase<CR>
+map <silent> tq :GhcModType<CR>
+map <silent> te :GhcModTypeClear<CR>
+
+let g:haskell_tabular = 1
+
+vmap a= :Tabularize /=<CR>
+vmap a; :Tabularize /::<CR>
+vmap a- :Tabularize /-><CR>
+
+" Elm
+autocmd FileType Elm nnoremap <leader>el :ElmEvalLine<CR>
+autocmd FileType Elm vnoremap <leader>es :<C-u>ElmEvalSelection<CR>
+autocmd FileType Elm nnoremap <leader>em :ElmMakeCurrentFile<CR>
+:au BufWritePost *.elm ElmMakeFile("Main.elm")
 
 " autocmd bufwritepost *.js silent !standard % --format
 set autoread

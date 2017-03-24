@@ -83,9 +83,19 @@ Plug 'jceb/vim-orgmode'
 "" Clojure
 Plug 'tpope/vim-fireplace'
 Plug 'tpope/vim-classpath'
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'guns/vim-clojure-static'
+
+" Haskell
+Plug 'eagletmt/ghcmod-vim'
+Plug 'eagletmt/neco-ghc'
+Plug 'Shougo/vimproc.vim'
+Plug 'godlygeek/tabular'
+Plug 'ervandew/supertab'
+
+" Elm
+Plug 'lambdatoast/elm.vim'
 
 
 call plug#end()
