@@ -1,5 +1,10 @@
 {:user {:plugins [[lein-pprint "1.1.1"]
                   [lein-midje "3.1.3"]
                   [venantius/ultra "0.3.4"]
+                  [cider/cider-nrepl "0.10.0-SNAPSHOT"]
+                  [refactor-nrepl "2.0.0-SNAPSHOT"]
+                  [lein-autoexpect "1.7.0"]
                   [lein-try "0.4.1"]]
+        :dependencies [[alembic "0.3.2"]
+                       [org.clojure/tools.nrepl "0.2.12"]]
         :ultra {:color-scheme :solarized_dark}}}
