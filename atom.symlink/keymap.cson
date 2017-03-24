@@ -1,0 +1,7 @@
+'atom-text-editor.vim-mode:not(.insert-mode)':
+  ';': 'ex-mode:open'
+'atom-workspace':
+  'ctrl-i':     'cursor-history:next'
+  'ctrl-o':     'cursor-history:prev'
+  'ctrl-cmd-i': 'cursor-history:next-within-editor'
+  'ctrl-cmd-o': 'cursor-history:prev-within-editor'

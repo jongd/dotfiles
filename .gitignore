@@ -8,3 +8,7 @@ atom.symlink/themes
 git/gitconfig.symlink
 mutt/muttrc.symlink
 
+.DS_Store
+atom.symlink/projects.cson
+atom.symlink/blob-store
+atom.symlink/.apm

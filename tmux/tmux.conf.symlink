@@ -1,9 +1,4 @@
 # Enable mouse selections
-# set-option -g mouse-select-pane on
-# set-option -g mouse-select-window on
-# set-option -g mouse-resize-pane on
-# set-window-option -g mode-mouse on
-set -g mouse-utf8 on
 set -g mouse on
 
 # remap prefix to Control + a
@@ -27,7 +22,6 @@ setw -g window-status-current-fg white
 setw -g window-status-current-attr bright
 
 # Status Bar
-set -g status-utf8 on
 set -g status-left "[#h]:#S"
 set -g status-left-length 45
 set -g status-right "%Y-%m-%d #[fg=white]%R #{battery_icon}"
@@ -37,7 +31,6 @@ set -g visual-activity on
 
 # Termset
 set -g default-terminal "xterm-256color"
-setw -g utf8 on
 
 # Tmuxline
 source ~/.dotfiles/tmux/tmuxline

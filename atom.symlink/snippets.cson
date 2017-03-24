@@ -1,0 +1,15 @@
+'.source.js':
+  'question':
+    'prefix': 'question'
+    'body': """
+            {
+              question: '$1',
+              value: $2,
+              selected: false,
+              description: '$3',
+              yes: '$4',
+              yesAttr: '$5',
+              no: '$6',
+              noAttr: '$7',
+            },
+            """

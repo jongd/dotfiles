@@ -2,7 +2,7 @@
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=~/code
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
@@ -46,11 +46,9 @@ fi
 
 unset config_files
 
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-
 if [ `uname` = "Darwin" ]
 then
-  . `brew --prefix`/Cellar/z/1.8/etc/profile.d/z.sh
+  . `brew --prefix`/Cellar/z/1.9/etc/profile.d/z.sh
 fi
 
 # export PGHOST=/var/pgsql_socket
@@ -59,9 +57,6 @@ if hash archey 2>/dev/null;
 then
   archey -c
 fi
-# doge
-# cowsay -f ntlk cooking with gas!
-# cowsay -f markconnor "sup bb"
 
 export ACKRC=".ackrc"
 
@@ -73,5 +68,3 @@ BASE16_SHELL="$ZSH/zsh/base16-ocean-dark.sh"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-# $(boot2docker shellinit)
