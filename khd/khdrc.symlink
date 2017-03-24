@@ -100,8 +100,8 @@ ctrl + shift - left      :    kwmc window -m west
 ctrl + shift - x         :    kwmc window -m mark
 
 # Move Focused Window To Space
-ctrl + alt - left        :    kwmc window -m space left
-ctrl + alt - right       :    kwmc window -m space right
+ctrl + alt + shift - left        :    kwmc window -m space left
+ctrl + alt + shift - right       :    kwmc window -m space right
 
 # Move Focused Window To Screen
 ctrl + alt - 1           :    kwmc window -m display 0
@@ -129,3 +129,7 @@ prefix + shift - right   :    kwmc space -p decrease right
 prefix + shift - up      :    kwmc space -p decrease top
 prefix + shift - down    :    kwmc space -p decrease bottom
 prefix + shift - p       :    kwmc space -p decrease all
+
+prefix - c               :    kwmc config reload
+prefix + shift - c       :    khd -e "reload"
+

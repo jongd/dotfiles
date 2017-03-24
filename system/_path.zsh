@@ -10,4 +10,6 @@ export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
-export PYTHONPATH='/usr/local/lib/python2.7/site-packages:$PYTHONPATH'
+# export PYTHONPATH='/usr/local/lib/python2.7/site-packages:$PYTHONPATH'
+# added by Anaconda2 4.3.0 installer
+#export PATH="/Users/jon_gold/anaconda2/bin:$PATH"

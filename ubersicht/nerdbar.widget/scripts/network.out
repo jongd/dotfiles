@@ -1,3 +1,6 @@
             input        (Total)           output
    packets  errs      bytes    packets  errs      bytes colls
+<<<<<<< Updated upstream
       6263     0    9229458       3917     0     279058     0
+=======
+>>>>>>> Stashed changes

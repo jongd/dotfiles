@@ -40,6 +40,9 @@ setw -g mode-keys vi
 
 # Setup 'v' to begin selection as in Vim
 bind-key -t vi-copy v begin-selection
+
+# Makes sure this is installed
+# brew install reattach-to-user-namespace
 bind-key -t vi-copy y copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Update default binding of `Enter` to also use copy-pipe

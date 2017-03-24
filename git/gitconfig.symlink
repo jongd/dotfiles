@@ -4,6 +4,7 @@
 	name = Jon Gold
 	email = hello@designedbygold.com
   helper = osxkeychain
+	signingkey = C03382FC
 [alias]
   co = checkout
   promote = !$ZSH/bin/git-promote
@@ -24,6 +25,7 @@
   # Show files ignored by git:
   ign = ls-files -o -i --exclude-standard
   ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
+	airbnb = config user.email \"jon.gold@airbnb.com\"
 [color]
   diff = auto
   status = auto
@@ -71,3 +73,9 @@
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [heroku]
+[pull]
+	rebase = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2

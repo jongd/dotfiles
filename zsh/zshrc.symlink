@@ -48,7 +48,7 @@ unset config_files
 
 if [ `uname` = "Darwin" ]
 then
-  . `brew --prefix`/Cellar/z/1.9/etc/profile.d/z.sh
+  eval "$(fasd --init auto)"
 fi
 
 # export PGHOST=/var/pgsql_socket
@@ -62,9 +62,19 @@ export ACKRC=".ackrc"
 
 . $ZSH/zsh/h.sh
 
-BASE16_SHELL="$ZSH/zsh/base16-ocean-dark.sh"
-
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+#BASE16_SHELL="$ZSH/zsh/base16-ocean-dark.sh"
+#[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+
+if [[ -a ~/code/fastai/courses/setup/aws-alias.sh ]]
+then
+  source ~/code/fastai/courses/setup/aws-alias.sh 
+fi
+
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+

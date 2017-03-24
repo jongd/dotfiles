@@ -1,4 +1,20 @@
 set shell=/bin/sh
+"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+"If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
+"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+if (empty($TMUX))
+  if (has("nvim"))
+    "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+  "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+  " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
 
 " Leader
 let mapleader = " "
@@ -108,11 +124,14 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|build|target|d
 
 
 " Color scheme
-set background=dark
-let base16colorspace=256
-colorscheme base16-ocean
-highlight NonText guibg=#060606
-highlight Folded  guibg=#0A0A0A guifg=#9090D0
+" set background=dark
+" let base16colorspace=256
+" colorscheme base16-ocean
+" highlight NonText guibg=#060606
+" highlight Folded  guibg=#0A0A0A guifg=#9090D0
+let g:onedark_termcolors=16
+colorscheme onedark
+
 
 " let g:startify_custom_header=$doge
 
@@ -176,13 +195,9 @@ nnoremap <C-l> <C-w>l
 " Remap semicolon to colon
 map ; :
 
-let g:jsx_ext_required = 0 " Allow JSX in normal JS files
-
-
-" configure syntastic syntax checking to check on open as well as save
-let b:syntastic_mode='passive'
-let g:syntastic_check_on_open=0
-let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_check_on_open=1
+let g:syntastic_javascript_checkers = ['eslint', 'flow']
+let g:syntastic_javascript_flow_exe = 'flow check-contents'
 
 map <Leader>s :SyntasticToggleMode<CR>
 
@@ -221,6 +236,12 @@ autocmd FileType Elm nnoremap <leader>em :ElmMakeCurrentFile<CR>
 " autocmd bufwritepost *.js silent !standard % --format
 set autoread
 
+autocmd BufReadPre *.js let b:javascript_lib_use_ramda = 1
+autocmd BufReadPre *.js let b:javascript_lib_use_react = 1
+
+" vim-jsx
+let g:jsx_ext_required = 0
+
 " Local config
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
@@ -239,6 +260,8 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+"This unsets the "last search pattern" register by hitting return
+nnoremap <CR> :noh<CR><CR>
 
 
 " " NeoComplete
