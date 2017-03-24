@@ -1,7 +1,27 @@
 "*":
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+        ".hgrc"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "choose-pane"
+      "linter-flake8"
+      "linter-pylint"
+      "omnisharp-atom"
+      "nuclide"
+      "nuclide-format-js"
+      "language-ocaml"
+      "flow-ide"
     ]
     hideIgnoredNames: [
       "lib/"
@@ -14,21 +34,29 @@
     telemetryConsent: "limited"
     useCustomTitleBar: true
   editor:
-    fontFamily: "Input Mono"
-    fontSize: 13
+    fontFamily: "FiraCode-Retina"
     showInvisibles: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "78cbd0ab-7466-ccfb-601a-7d77efd31f9d"
+  "flow-ide":
+    executablePath: "/usr/local/bin/flow"
   "fuzzy-finder":
     ignoredNames: [
       "node_modules"
     ]
+  "ide-purescript":
+    pscIdeServerExe: "/usr/local/bin/psc-ide-server"
   ignoreDirectories: "lib"
   linter:
-    errorPanelHeight: 208
+    errorPanelHeight: 118
     lintOnFlyInterval: 500
   "linter-eslint": {}
+  "linter-flake8": {}
+  "linter-pylint": {}
+  "markdown-preview":
+    liveUpdate: false
+    useGitHubStyle: true
   minimap:
     plugins:
       bookmarks: true
@@ -37,12 +65,32 @@
       cursorlineDecorationsZIndex: 0
       "find-and-replace": true
       "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
       linter: true
       linterDecorationsZIndex: 0
       selection: true
       selectionDecorationsZIndex: 0
+  nuclide:
+    installRecommendedPackages: true
+  "prettier-atom":
+    formatOnSaveOptions: {}
+    prettierOptions:
+      parser: "flow"
+    useEslint: true
   "project-manager":
     ignoreDirectories: "node_modules, vendor, lib, dist"
+  "todo-show":
+    showInTable: [
+      "Id"
+      "Text"
+      "File"
+      "Line"
+      "Type"
+      "Tags"
+    ]
+    sortBy: "Id"
+    statusBarIndicator: true
   "tree-view":
     hideVcsIgnoredFiles: true
   "vim-mode-plus":
