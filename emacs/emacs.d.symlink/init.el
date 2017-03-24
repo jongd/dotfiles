@@ -169,24 +169,14 @@
 
 ;; Theme
 (load-theme 'base16-ocean t)
-(setq-default line-spacing 4)
-(set-default-font "Source Code Pro Light-13")
+(setq-default line-spacing 3)
+(set-default-font "Input-13")
 
 (require 'powerline)
 (powerline-default-theme)
 
 ;; (setq tab-always-indent 'complete)
 ;; (add-to-list 'completion-styles 'initials t)
-
-;; coffeescript
-;; (custom-set-variables
-;;  '(coffee-tab-width 2)
-;;  '(coffee-args-compile '("-c" "--bare")))
-
-;; (eval-after-load "coffee-mode"
-;;   '(progn
-;;      (define-key coffee-mode-map [(meta r)] 'coffee-compile-buffer)
-;;      (define-key coffee-mode-map (kbd "C-j") 'coffee-newline-and-indent)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -247,3 +237,23 @@
 
 (defconst clojure--prettify-symbols-alist
   '(("fn"  . ?λ)))
+
+
+;; esc quits
+(defun minibuffer-keyboard-quit ()
+  "Abort recursive edit.
+In Delete Selection mode, if the mark is active, just deactivate it;
+then it takes a second \\[keyboard-quit] to abort the minibuffer."
+  (interactive)
+  (if (and delete-selection-mode transient-mark-mode mark-active)
+      (setq deactivate-mark  t)
+    (when (get-buffer "*Completions*") (delete-windows-on "*Completions*"))
+    (abort-recursive-edit)))
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+(global-set-key [escape] 'evil-exit-emacs-state)
