@@ -2,6 +2,8 @@ export PATH="./bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/.sfs:
 export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"
 export PATH="$HOME/.dotfiles/vim:$PATH"
 export PATH="$PATH:$HOME/npm/bin"
+export PATH="$PATH:$HOME/anaconda/bin"
+export PATH="$PATH:$HOME/.local/bin"
 export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig:$PKG_CONFIG_PATH"
 

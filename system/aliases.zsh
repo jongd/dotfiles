@@ -30,3 +30,7 @@ alias focus='open focus://toggle'
 
 # NPM
 alias npmlinks='ls -l node_modules | grep ^l'
+
+alias tat='tmux new -s `basename $PWD`'
+
+alias jupbook='docker run -d -p 8888:8888 -v $(pwd):/notebook ermaker/keras-jupyter'

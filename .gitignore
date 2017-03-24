@@ -12,3 +12,4 @@ mutt/muttrc.symlink
 atom.symlink/projects.cson
 atom.symlink/blob-store
 atom.symlink/.apm
+ubersicht/nerdbar.widget/scripts/network.out

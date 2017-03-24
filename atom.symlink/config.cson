@@ -29,7 +29,6 @@
     ignoredNames: [
       "lib/"
     ]
-    packagesWithKeymapsDisabled: []
     projectHome: "/Users/jon_gold/code"
     telemetryConsent: "limited"
     useCustomTitleBar: true
