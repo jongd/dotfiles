@@ -2,8 +2,6 @@
 --sort-files
 --color
 --group
---pager=less -iqRS
-
 
 --type-add=ruby=.haml,.sass,.scss
 --type-add=html=.haml
