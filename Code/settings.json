@@ -1,0 +1,106 @@
+{
+  // Place your settings in this file to overwrite the default settings
+  // Workspace
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.sideBar.location": "right",
+  // Editor settings
+  "editor.fontFamily":
+    "Fira Code Retina, Fira Code, Input Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 14,
+  //"editor.lineHeight": 20,
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
+  // "editor.renderIndentGuides": true,
+  "editor.cursorBlinking": "blink",
+  "editor.wordWrapColumn": 80,
+  "files.defaultLanguage": "markdown",
+  // JavaScript
+  "javascript.validate.enable": false,
+  // Prettier
+  "editor.formatOnSave": true,
+  "explorer.autoReveal": false,
+  // Vim
+  "vim.easymotion": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.overrideCopy": true,
+  "vim.history": 1000,
+  "vim.leader": ",",
+  "vim.useSolidBlockCursor": true,
+  "search.exclude": {},
+  "search.useRipgrep": true,
+  "editor.renderWhitespace": "boundary",
+  "workbench.iconTheme": "vs-seti",
+  "projectManager.git.baseFolders": ["~/code"],
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.styles": [
+    "file:///Users/jon_gold/Library/Application Support/Code - Insiders/User/github-markdown.css"
+  ],
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.quickSuggestions": false
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "window.zoomLevel": 0,
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#23262E",
+    "activityBar.dropBackground": "#01ffae",
+    "activityBar.foreground": "#ABB2BF",
+    "editorGroupHeader.tabsBackground": "#23262E",
+    "editorSuggestWidget.background": "#3E4451",
+    "editorSuggestWidget.highlightForeground": "#ffffff",
+    "editorSuggestWidget.selectedBackground": "#23262E",
+    "input.background": "#23262E",
+    "input.foreground": "#ABB2BF",
+    // "panel.background": "#01ffae",
+    "scrollbar.shadow": "#23262E",
+    "scrollbarSlider.activeBackground": "#23262E",
+    "scrollbarSlider.background": "#23262E",
+    "sideBar.background": "#23262E",
+    "sideBarSectionHeader.background": "#282C34",
+    "statusBar.background": "#3E4451",
+    "tab.activeForeground": "#ABB2BF",
+    "tab.inactiveBackground": "#23262E",
+    "tab.inactiveForeground": "#ABB2BF",
+    "titleBar.activeBackground": "#23262E",
+    "titleBar.activeForeground": "#ABB2BF"
+    // "scrollbarSlider.hoverBackground": "#01ffae",
+  },
+  "html.suggest.angular1": false,
+  "html.suggest.ionic": false,
+  "php.suggest.basic": false,
+  "eslint.run": "onSave",
+  "eslint.autoFixOnSave": false,
+  "[javascript]": {},
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.jsbundle": "javascript"
+  },
+  "vim.disableAnnoyingNeovimMessage": true,
+  "emmet.triggerExpansionOnTab": false,
+  "docker.enableLinting": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": true,
+    "**/*.sketchplugin": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/_book": true,
+    "**/lib": true
+  },
+  "workbench.welcome.enabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "markdown.previewFrontMatter": "show",
+  "prettier.singleQuote": true,
+  "prettier.eslintIntegration": true
+}
